@@ -1,0 +1,14 @@
+#piePic {
+  height: 75px;
+}
+
+:root {
+  --greigh: lightgrey;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--greigh);
+}

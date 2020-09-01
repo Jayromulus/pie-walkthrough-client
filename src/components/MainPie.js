@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import './App.css';
-import Navbar from './components/Navbar/Navbar'
+import Navbar from './Navbar/Navbar'
 
-function App() {
+const MainPie = () =>  {
   const [sessionToken, setSessionToken] = useState(undefined);
   // let sessionToken = value, let setSessionToken = function(newValue) { sessionToken = newValue }
   console.log(sessionToken);
@@ -16,12 +15,4 @@ function App() {
   );
 }
 
-// const App = () => {
-//   return (
-//     <div className="App">
-//       <h1>Main Pie Connected!</h1>
-//     </div>
-//   );
-// }
-
-export default App;
+export default MainPie;
