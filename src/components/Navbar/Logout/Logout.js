@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Logout.css';
 import logoutPic from '../../../assets/logout-icon.png'
 
 const Logout = (props) => {
-  return(
+  return (
     <div>
-      <img id='logout' className='logout' src={logoutPic} alt='logout' />
+      {/* CHALLENGE: click this logout image in order to set the session token to undefined */}
+      <img id='logout' className='logout' src={logoutPic} alt='logout' onClick={() => props.setSessionToken(undefined)} />
+      {/* <input type="image" src={logoutPic} id="logout" alt="logout" 
+      onClick={(e) => props.setSessionToken(undefined)} /> */}
     </div>
   )
 }
